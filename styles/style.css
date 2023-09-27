@@ -395,6 +395,7 @@ article.intro h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin: auto;
     padding-block: 3em;
     border-radius: 2em;
@@ -402,23 +403,26 @@ article.intro h2 {
 }
 
 .wrapper button {
-    top: 50%;
+    /* top: 50%; */
     height: 50px;
     width: 50px;
     cursor: pointer;
     font-size: 1.25rem;
-    position: absolute;
+    /* position: absolute; */
     text-align: center;
     line-height: 50px;
     background: #fff;
     border-radius: 50%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     transition: transform 0.1s linear;
 }
 
+.wrapper .filters {
+}
+
 .wrapper button:active {
-    transform: translateY(-50%) scale(0.85);
+    transform: scale(0.85);
 }
 
 .wrapper button:first-child {
