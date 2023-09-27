@@ -470,7 +470,7 @@ article.intro h2 {
     scroll-snap-align: start;
     height: 380px;
     list-style: none;
-    background: black;
+    background: black; /* Als je deze uitzet is hij transparant background, dit staan aan om de kaart te zien*/
     cursor: pointer;
     padding-bottom: 15px;
     flex-direction: column;
