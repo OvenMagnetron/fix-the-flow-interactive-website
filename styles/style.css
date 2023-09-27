@@ -25,14 +25,14 @@
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); 
 } */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* font-family: 'Poppins', sans-serif; */
 }
 
-:root{
+:root {
     /* ===== Colors ===== */
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
@@ -49,19 +49,19 @@
 }
 
 
-body{
+body {
     min-height: 100vh;
     background-color: var(--body-color);
     transition: var(--tran-05);
     font-family: AvenirMedium;
 }
 
-::selection{
+::selection {
     background-color: var(--primary-color);
     color: #fff;
 }
 
-body.dark{
+body.dark {
     --body-color: #18191a;
     --sidebar-color: #242526;
     --primary-color: #3a3b3c;
@@ -71,7 +71,7 @@ body.dark{
 }
 
 /* ===== Sidebar ===== */
- .sidebar{
+.sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -80,14 +80,15 @@ body.dark{
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
-    z-index: 100;  
+    z-index: 100;
 }
-.sidebar.close{
+
+.sidebar.close {
     width: 88px;
 }
 
 /* ===== Reusable code - Here ===== */
-.sidebar li{
+.sidebar li {
     height: 50px;
     list-style: none;
     display: flex;
@@ -96,12 +97,12 @@ body.dark{
 }
 
 .sidebar header .image,
-.sidebar .icon{
+.sidebar .icon {
     min-width: 60px;
     border-radius: 6px;
 }
 
-.sidebar .icon{
+.sidebar .icon {
     min-width: 60px;
     border-radius: 6px;
     height: 100%;
@@ -112,76 +113,80 @@ body.dark{
 }
 
 .sidebar .text,
-.sidebar .icon{
+.sidebar .icon {
     color: var(--text-color);
     transition: var(--tran-03);
 }
 
-.sidebar .text{
+.sidebar .text {
     font-size: 17px;
     font-weight: 500;
     white-space: nowrap;
     opacity: 1;
 }
-.sidebar.close .text{
+
+.sidebar.close .text {
     opacity: 0;
 }
 
 .sidebar .text-long,
-.sidebar .icon{
+.sidebar .icon {
     color: var(--text-color);
     transition: var(--tran-03);
 }
 
-.sidebar .text-long{
+.sidebar .text-long {
     font-size: 17px;
     font-weight: 500;
     resize: none;
     opacity: 1;
 }
-.sidebar.close .text-long{
+
+.sidebar.close .text-long {
     resize: none;
     opacity: 0;
 }
 
 /* =========================== */
 
-.sidebar header{
+.sidebar header {
     position: relative;
 }
 
-.sidebar header .image-text{
+.sidebar header .image-text {
     display: flex;
     align-items: center;
 }
-.sidebar header .logo-text{
+
+.sidebar header .logo-text {
     display: flex;
     flex-direction: column;
 }
+
 header .image-text .name {
     margin-top: 2px;
     font-size: 18px;
     font-weight: 600;
 }
 
-header .image-text .profession{
+header .image-text .profession {
     font-size: 16px;
     margin-top: -2px;
     display: block;
 }
 
-.sidebar header .image{
+.sidebar header .image {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sidebar header .image img{
+.sidebar header .image img {
     width: 3rem;
     border-radius: 180px;
 }
 
-.sidebar header .toggle{
+.sidebar header .toggle {
     position: absolute;
     top: 50%;
     right: -25px;
@@ -199,26 +204,26 @@ header .image-text .profession{
     transition: var(--tran-05);
 }
 
-body.dark .sidebar header .toggle{
+body.dark .sidebar header .toggle {
     color: var(--text-color);
 }
 
-.sidebar.close .toggle{
+.sidebar.close .toggle {
     transform: translateY(-50%) rotate(0deg);
 }
 
-.sidebar .menu{
+.sidebar .menu {
     margin-top: 18px;
 }
 
-.sidebar li.search-box{
+.sidebar li.search-box {
     border-radius: 6px;
     background-color: var(--primary-color-light);
     cursor: pointer;
     transition: var(--tran-05);
 }
 
-.sidebar li.search-box input{
+.sidebar li.search-box input {
     height: 100%;
     width: 100%;
     outline: none;
@@ -230,7 +235,8 @@ body.dark .sidebar header .toggle{
     font-weight: 500;
     transition: var(--tran-05);
 }
-.sidebar li a{
+
+.sidebar li a {
     list-style: none;
     height: 100%;
     background-color: transparent;
@@ -243,54 +249,61 @@ body.dark .sidebar header .toggle{
     transition: var(--tran-03);
 }
 
-.sidebar li a:hover{
+.sidebar li a:hover {
     background-color: var(--primary-color);
 }
+
 .sidebar li a:hover .icon,
-.sidebar li a:hover .text{
+.sidebar li a:hover .text {
     color: var(--sidebar-color);
 }
+
 body.dark .sidebar li a:hover .icon,
-body.dark .sidebar li a:hover .text{
+body.dark .sidebar li a:hover .text {
     color: var(--text-color);
 }
 
-.sidebar .menu-bar{
+.sidebar .menu-bar {
     height: calc(100% - 55px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow-y: scroll;
 }
-.menu-bar::-webkit-scrollbar{
+
+.menu-bar::-webkit-scrollbar {
     display: none;
 }
-.sidebar .menu-bar .mode{
+
+.sidebar .menu-bar .mode {
     border-radius: 6px;
     background-color: var(--primary-color-light);
     position: relative;
     transition: var(--tran-05);
 }
 
-.menu-bar .mode .sun-moon{
+.menu-bar .mode .sun-moon {
     height: 50px;
     width: 60px;
 }
 
-.mode .sun-moon i{
+.mode .sun-moon i {
     position: absolute;
 }
-.mode .sun-moon i.sun{
-    opacity: 0;
-}
-body.dark .mode .sun-moon i.sun{
-    opacity: 1;
-}
-body.dark .mode .sun-moon i.moon{
+
+.mode .sun-moon i.sun {
     opacity: 0;
 }
 
-.menu-bar .bottom-content .toggle-switch{
+body.dark .mode .sun-moon i.sun {
+    opacity: 1;
+}
+
+body.dark .mode .sun-moon i.moon {
+    opacity: 0;
+}
+
+.menu-bar .bottom-content .toggle-switch {
     position: absolute;
     right: 0;
     height: 100%;
@@ -301,7 +314,8 @@ body.dark .mode .sun-moon i.moon{
     border-radius: 6px;
     cursor: pointer;
 }
-.toggle-switch .switch{
+
+.toggle-switch .switch {
     position: relative;
     height: 22px;
     width: 40px;
@@ -310,7 +324,7 @@ body.dark .mode .sun-moon i.moon{
     transition: var(--tran-05);
 }
 
-.switch::before{
+.switch::before {
     content: '';
     position: absolute;
     height: 15px;
@@ -323,11 +337,11 @@ body.dark .mode .sun-moon i.moon{
     transition: var(--tran-04);
 }
 
-body.dark .switch::before{
+body.dark .switch::before {
     left: 20px;
 }
 
-.home{
+.home {
     position: absolute;
     top: 0;
     top: 0;
@@ -337,19 +351,21 @@ body.dark .switch::before{
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
-.home .text{
+
+.home .text {
     font-size: 30px;
     font-weight: 500;
     color: var(--text-color);
     padding: 12px 60px;
 }
 
-.sidebar.close ~ .home{
+.sidebar.close~.home {
     left: 78px;
     height: 100vh;
     width: calc(100% - 78px);
 }
-body.dark .home .text{
+
+body.dark .home .text {
     color: var(--text-color);
 }
 
@@ -361,6 +377,14 @@ body.dark .home .text{
     margin: 0.5rem 2.5rem 2.5rem 2.5rem;
     border-radius: 15px;
     min-height: auto;
+}
+
+article.intro {
+    text-align: center;
+}
+
+article.intro h2 {
+    font-size: 2em;
 }
 
 /* carrousel */
@@ -375,8 +399,9 @@ body.dark .home .text{
     padding-block: 3em;
     border-radius: 2em;
     max-width: 1400px;
-  }
-  .wrapper button {
+}
+
+.wrapper button {
     top: 50%;
     height: 50px;
     width: 50px;
@@ -387,51 +412,61 @@ body.dark .home .text{
     line-height: 50px;
     background: #fff;
     border-radius: 50%;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
     transform: translateY(-50%);
     transition: transform 0.1s linear;
-  }
-  .wrapper button:active{
+}
+
+.wrapper button:active {
     transform: translateY(-50%) scale(0.85);
-  }
-  .wrapper button:first-child{
+}
+
+.wrapper button:first-child {
     left: -22px;
-  }
-  .wrapper button:last-child{
+}
+
+.wrapper button:last-child {
     right: -22px;
-  }
-  .wrapper .carousel{
+}
+
+.wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 4 ) - 12px);
+    grid-auto-columns: calc((100% / 4) - 12px);
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     gap: 16px;
     border-radius: 8px;
     scroll-behavior: smooth;
-  }
-  .carousel::-webkit-scrollbar {
+}
+
+.carousel::-webkit-scrollbar {
     width: 10px;
     height: 10px;
     color: black;
-  }
-  .carousel.no-transition {
+}
+
+.carousel.no-transition {
     scroll-behavior: auto;
-  }
-  .carousel.dragging {
+}
+
+.carousel.dragging {
     scroll-snap-type: none;
     scroll-behavior: auto;
-  }
-  .carousel.dragging .card {
+}
+
+.carousel.dragging .card {
     cursor: grab;
     user-select: none;
-  }
-  .carousel :where(.card, .img) {
+}
+
+.carousel :where(.card, .img) {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .carousel .card {
+}
+
+.carousel .card {
     scroll-snap-align: start;
     height: 380px;
     list-style: none;
@@ -440,54 +475,58 @@ body.dark .home .text{
     padding-bottom: 15px;
     flex-direction: column;
     border-radius: 8px;
-  }
-  .carousel .card .img {
+}
+
+.carousel .card .img {
     background: black;
     height: 148px;
     width: 148px;
     border-radius: 50%;
-  }
-  .card .img img {
+}
+
+.card .img img {
     width: 140px;
     height: 140px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #fff;
-  }
-  
-  .carousel .card a {
+}
+
+.carousel .card a {
     margin-top: 1em;
-  }
-  
-  .carousel .card h2 {
+}
+
+.carousel .card h2 {
     font-weight: 500;
     font-size: 1.56rem;
     margin: 30px 0 5px;
-  }
-  .carousel .card span {
+}
+
+.carousel .card span {
     color: #6A6D78;
     font-size: 1.31rem;
-  }
-  
-  @media screen and (max-width: 1000px) {
-    .wrapper .carousel {
-      grid-auto-columns: calc((100% / 3) - 9px);
-    }
-  }
-  
-  @media screen and (max-width: 900px) {
-    .wrapper .carousel {
-      grid-auto-columns: calc((100% / 2) - 9px);
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .wrapper .carousel {
-      grid-auto-columns: 100%;
-    }
-    .titel h1 {
-      font-size: 4em;
-    }
-  }
+}
 
-  /* end carrousel */
+@media screen and (max-width: 1000px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 3) - 9px);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+
+    .titel h1 {
+        font-size: 4em;
+    }
+}
+
+/* end carrousel */
