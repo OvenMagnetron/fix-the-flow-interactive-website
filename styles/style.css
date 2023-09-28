@@ -216,14 +216,20 @@ body.dark .sidebar header .toggle {
     margin-top: 18px;
 }
 
-.sidebar li.search-box {
+.sidebar li.search-box,
+select#filters {
     border-radius: 6px;
     background-color: var(--primary-color-light);
     cursor: pointer;
     transition: var(--tran-05);
 }
 
-.sidebar li.search-box input {
+select#filters {
+    padding: 1em;
+}
+
+.sidebar li.search-box input,
+select#filters option {
     height: 100%;
     width: 100%;
     outline: none;
@@ -394,7 +400,7 @@ article.intro h2 {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     flex-wrap: wrap;
     margin: auto;
     padding-block: 3em;
@@ -418,9 +424,6 @@ article.intro h2 {
     transition: transform 0.1s linear;
 }
 
-.wrapper .filters {
-}
-
 .wrapper button:active {
     transform: scale(0.85);
 }
@@ -442,6 +445,10 @@ article.intro h2 {
     /* gap: 16px;  ALS JE NIET WILT DAT DE VOLGENDE BOEK ZICHTBAAR IS*/
     border-radius: 8px;
     scroll-behavior: smooth;
+}
+
+.wrapper .filters select {
+    margin-right: 1.5em;
 }
 
 .carousel::-webkit-scrollbar {
@@ -485,21 +492,33 @@ article.intro h2 {
     margin-left: 2.5rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
     .wrapper .carousel {
         grid-auto-columns: calc((100% / 3) - 9px);
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .wrapper .carousel {
         grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .carousel .card {
+        height: 280px;
     }
 }
 
 @media screen and (max-width: 600px) {
     .wrapper .carousel {
         grid-auto-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .carousel .card {
+        height: 230px;
     }
 }
 
