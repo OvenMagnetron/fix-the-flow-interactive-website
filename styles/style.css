@@ -389,6 +389,18 @@ article.intro {
     text-align: center;
 }
 
+article.introverlengen {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    max-width: 1325px;
+}
+
+article.introverlengen p {
+    margin-top: 1.5rem;
+    width: 50%;
+}
+
 article.intro h2 {
     font-size: 2em;
 }
@@ -496,6 +508,10 @@ article.intro h2 {
     .wrapper .carousel {
         grid-auto-columns: calc((100% / 3) - 9px);
     }
+
+    article.introverlengen p {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -517,6 +533,10 @@ article.intro h2 {
 
     article.intro h2 {
         font-size: 1.5em;
+    }
+
+    article.introverlengen p {
+        width: 100%;
     }
 
     .wrapper .filters {
