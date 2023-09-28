@@ -514,11 +514,41 @@ article.intro h2 {
     .wrapper .carousel {
         grid-auto-columns: 100%;
     }
+
+    article.intro h2 {
+        font-size: 1.5em;
+    }
+
+    .wrapper .filters {
+        max-width: 150px;
+    }
+
+    select#filters {
+        margin-bottom: 1em;
+    }
+
+    .wrapper {
+        justify-content: center;
+    }
+
+    .carousel h3,
+    .carousel p {
+        margin-left: 2rem;
+    }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .carousel .card {
         height: 230px;
+    }
+
+    article.intro h2 {
+        font-size: 1.3em;
+    }
+
+    .carousel h3,
+    .carousel p {
+        margin-left: 1.5rem;
     }
 }
 
