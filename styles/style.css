@@ -386,17 +386,13 @@ body.dark .home .text {
 }
 
 article.intro {
-    text-align: center;
-}
-
-article.introverlengen {
     text-align: left;
     width: 90%;
     margin: auto;
     max-width: 1325px;
 }
 
-article.introverlengen p {
+article.intro p {
     margin-top: 1.5rem;
     width: 50%;
 }
@@ -509,7 +505,7 @@ article.intro h2 {
         grid-auto-columns: calc((100% / 3) - 9px);
     }
 
-    article.introverlengen p {
+    article.intro p {
         width: 80%;
     }
 }
@@ -535,7 +531,7 @@ article.intro h2 {
         font-size: 1.5em;
     }
 
-    article.introverlengen p {
+    article.intro p {
         width: 100%;
     }
 
