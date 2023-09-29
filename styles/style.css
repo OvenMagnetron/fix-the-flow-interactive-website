@@ -523,8 +523,35 @@ article.intro h2 {
 }
 
 @media screen and (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar.close {
+        width: 58px;
+        padding: 10px 0px;
+    }
+
+    .sidebar.close header .toggle {
+        right: inherit;
+    }
+
+    .sidebar header .toggle {
+        right: unset;
+        left: 75%
+    }
+
+    .container {
+        margin: 0.5rem 1rem 1rem 1rem;
+        padding: 0.5rem;
+    }
+
     .wrapper .carousel {
-        grid-auto-columns: 100%;
+        grid-auto-columns: calc((100% / 1) - 9px);
+    }
+
+    .carousel .card {
+        height: 280px;
     }
 
     article.intro h2 {
@@ -537,6 +564,7 @@ article.intro h2 {
 
     .wrapper .filters {
         max-width: 150px;
+        margin-bottom: 3em;
     }
 
     select#filters {
@@ -544,7 +572,7 @@ article.intro h2 {
     }
 
     .wrapper {
-        justify-content: center;
+        justify-content: left;
     }
 
     .carousel h3,
@@ -554,8 +582,14 @@ article.intro h2 {
 }
 
 @media screen and (max-width: 450px) {
-    .carousel .card {
-        height: 230px;
+    .carousel article h3 {
+        font-size: 1.5em;
+
+    }
+
+    .carousel article p {
+        font-size: 1em;
+
     }
 
     article.intro h2 {
