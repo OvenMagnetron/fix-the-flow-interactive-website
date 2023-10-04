@@ -523,13 +523,24 @@ article.intro h2 {
 }
 
 @media screen and (max-width: 600px) {
+    .home {
+        top: 10%
+    }
+
     .sidebar {
         width: 100%;
     }
 
+    .sidebar.close~.home {
+        left: 0;
+        width: 100%;
+    }
+
     .sidebar.close {
-        width: 58px;
-        padding: 10px 0px;
+        width: 100%;
+        padding: 10px 14px;
+        height: auto;
+        position: relative;
     }
 
     .sidebar.close header .toggle {
@@ -538,7 +549,15 @@ article.intro h2 {
 
     .sidebar header .toggle {
         right: unset;
-        left: 75%
+        left: 90%
+    }
+
+    .sidebar.close .toggle {
+        transform: translateY(-50%) rotate(90deg);
+    }
+
+    .sidebar header .toggle {
+        transform: translateY(-50%) rotate(270deg);
     }
 
     .container {
@@ -578,6 +597,22 @@ article.intro h2 {
     .carousel h3,
     .carousel p {
         margin-left: 2rem;
+    }
+
+    .sidebar.close header ul.menu-links {
+        display: flex;
+    }
+
+    .sidebar header ul.menu-links {
+        display: none;
+    }
+
+    .sidebar.close .text {
+        opacity: 1;
+    }
+
+    .sidebar.close .menu-bar {
+        display: none;
     }
 }
 
