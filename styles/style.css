@@ -525,6 +525,12 @@ article.intro h2 {
 @media screen and (max-width: 600px) {
     .sidebar {
         width: 100%;
+        display: none;
+    }
+
+    .sidebar.close~.home {
+        left: 0;
+        width: 100%;
     }
 
     .sidebar.close {
