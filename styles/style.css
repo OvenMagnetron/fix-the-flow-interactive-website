@@ -562,8 +562,8 @@ article.intro h2 {
     }
 
     .container {
-        margin: 0.5rem 1rem 1rem 1rem;
-        padding: 0.5rem;
+        margin: 2.5rem 1rem 1rem 1rem;
+        padding: 1.5rem;
     }
 
     .wrapper .carousel {
@@ -575,7 +575,7 @@ article.intro h2 {
     }
 
     article.intro h2 {
-        font-size: 1em;
+        font-size: 1.7em;
     }
 
     article.intro p {
