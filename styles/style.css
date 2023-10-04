@@ -418,6 +418,7 @@ article.intro h2 {
 
 .wrapper button {
     /* top: 50%; */
+    border: none;
     height: 50px;
     width: 50px;
     cursor: pointer;
@@ -566,15 +567,15 @@ article.intro h2 {
     }
 
     .wrapper .carousel {
-        grid-auto-columns: calc((100% / 1) - 9px);
+        grid-auto-columns: calc((100% / 2) - 9px);
     }
 
     .carousel .card {
-        height: 280px;
+        height: 200px;
     }
 
     article.intro h2 {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     article.intro p {
@@ -617,11 +618,6 @@ article.intro h2 {
 }
 
 @media screen and (max-width: 450px) {
-    .carousel article h3 {
-        font-size: 1.5em;
-
-    }
-
     .carousel article p {
         font-size: 1em;
 
