@@ -366,7 +366,7 @@ body.dark .switch::before {
     right: 0;
     margin-top: 1.5rem;
     margin-right: 4rem;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .sidebar.close~.home {
@@ -384,7 +384,7 @@ body.dark .home .text {
 .container {
     padding: 2rem;
     background-color: white;
-    margin: 0.5rem 2.5rem 2.5rem 2.5rem;
+    margin: 1rem 2.5rem 2.5rem 2.5rem;
     border-radius: 15px;
     min-height: auto;
 }
