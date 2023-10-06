@@ -525,6 +525,15 @@ article.intro h1 {
     .carousel .card {
         height: 280px;
     }
+
+    .home .text {
+        margin-right: 1.5rem;
+        padding: 1.7rem;
+    }
+
+    .home .text img {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -617,6 +626,14 @@ article.intro h1 {
     }
 
     .sidebar.close .menu-bar {
+        display: none;
+    }
+
+    .sidebar .menu-bar {
+        height: unset;
+    }
+
+    .home .text {
         display: none;
     }
 }
