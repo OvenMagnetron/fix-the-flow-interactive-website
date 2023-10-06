@@ -71,10 +71,10 @@ function toggleMobileSidebar() {
     // Check if the sidebar has the "close" class (active sidebar)
     if (sidebarMobile.classList.contains('close')) {
       // Disable scrolling on the home element
-      home.style.display = 'none';
+      home.style.display = 'inherit';
     } else {
       // Enable scrolling on the home element
-      home.style.display = 'inherit';
+      home.style.display = 'none';
     }
   } else {
     // If viewport width is larger than 600px, enable scrolling on the home element
