@@ -60,3 +60,30 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //   end carrousel
+
+// Test mobiel
+const sidebarMobile = document.querySelector('.sidebar');
+const home = document.querySelector('.home');
+
+function toggleMobileSidebar() {
+  // Check if the viewport width is less than or equal to 600px (mobile)
+  if (window.innerWidth <= 600) {
+    // Check if the sidebar has the "close" class (active sidebar)
+    if (sidebarMobile.classList.contains('close')) {
+      // Disable scrolling on the home element
+      home.style.display = 'none';
+    } else {
+      // Enable scrolling on the home element
+      home.style.display = 'inherit';
+    }
+  } else {
+    // If viewport width is larger than 600px, enable scrolling on the home element
+    home.style.display = 'inherit';
+  }
+}
+
+// Add an event listener for window resize
+window.addEventListener('resize', toggleMobileSidebar);
+
+// Initial call to set the initial state based on viewport width
+toggleMobileSidebar();
