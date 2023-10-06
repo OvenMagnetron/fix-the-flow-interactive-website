@@ -366,6 +366,7 @@ body.dark .switch::before {
     right: 0;
     margin-top: 1.5rem;
     margin-right: 4rem;
+    padding: 1rem;
 }
 
 .sidebar.close~.home {
@@ -400,7 +401,7 @@ article.intro p {
     width: 50%;
 }
 
-article.intro h2 {
+article.intro h1 {
     font-size: 2em;
 }
 
@@ -577,7 +578,7 @@ article.intro h2 {
         height: 200px;
     }
 
-    article.intro h2 {
+    article.intro h1 {
         font-size: 1.7em;
     }
 
@@ -626,7 +627,7 @@ article.intro h2 {
 
     }
 
-    article.intro h2 {
+    article.intro h1 {
         font-size: 1.3em;
     }
 
