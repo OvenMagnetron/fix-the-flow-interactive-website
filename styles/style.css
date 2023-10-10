@@ -1,4 +1,4 @@
-/* Fonts being used by the oba */
+/* Fonts */
 @font-face {
     font-family: AvenirRoman;
     src: url(../font/Avenir-roman.ttf);
@@ -14,23 +14,13 @@
     src: url(../font/Avenir\ -black.ttf);
 }
 
-/* Custom properties */
-/* :root {
-    --red:#FF0000;
-    --dark-color:#ce0000;
-    --black:#000000;
-    --gray:#666;
-    /* --border: .1rem solid rgba(0,0,0,.1);
-    --border-hover: .1rem solid var(--black);
-    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); 
-} */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Poppins', sans-serif; */
 }
+
+/* Styling */
 
 :root {
     /* ===== Colors ===== */
@@ -70,7 +60,7 @@ body.dark {
     --text-color: #ccc;
 }
 
-/* ===== Sidebar ===== */
+/* Start sidebar made by Amber */
 .sidebar {
     position: fixed;
     top: 0;
@@ -242,20 +232,6 @@ select#filters option {
     transition: var(--tran-05);
 }
 
-.gridParent button {
-    height: 100%;
-    width: 50%;
-    outline: none;
-    border: none;
-    border-radius: 15px;
-    background-color: var(--primary-color-light);
-    color: var(--text-color);
-    border-radius: 6px;
-    font-size: 17px;
-    font-weight: 500;
-    cursor: grab;
-}
-
 .sidebar li a {
     list-style: none;
     height: 100%;
@@ -393,7 +369,9 @@ body.dark .home .text {
     color: var(--text-color);
 }
 
-/* oba  */
+/* End sidebar made by Amber */
+
+/* Start container  */
 
 .container {
     padding: 2rem;
@@ -402,6 +380,10 @@ body.dark .home .text {
     border-radius: 15px;
     min-height: auto;
 }
+
+/* End container */
+
+/* Start intro of page */
 
 article.intro {
     text-align: left;
@@ -414,31 +396,6 @@ section article ul {
     margin-top: 2em;
 }
 
-section.gridParent {
-    text-align: left;
-    width: 90%;
-    margin: auto;
-    margin-top: 2.5rem;
-    max-width: 1325px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-article.gridTitle {
-    grid-column: 1 / -1;
-}
-
-article.gridLeft {
-    grid-column: 1 / 1;
-}
-
-article.gridRight {
-    grid-column: 2 / 2;
-}
-
 article.intro p {
     margin-top: 1.5rem;
     width: 50%;
@@ -448,7 +405,9 @@ article.intro h1 {
     font-size: 2em;
 }
 
-/* carrousel */
+/* End intro of page */
+
+/* Start of wrapper for carousel */
 
 .wrapper {
     width: 90%;
@@ -464,19 +423,16 @@ article.intro h1 {
 }
 
 .wrapper button {
-    /* top: 50%; */
     border: none;
     height: 50px;
     width: 50px;
     cursor: pointer;
     font-size: 1.25rem;
-    /* position: absolute; */
     text-align: center;
     line-height: 50px;
     background: #fff;
     border-radius: 50%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
-    /* transform: translateY(-50%); */
     transition: transform 0.1s linear;
 }
 
@@ -492,13 +448,16 @@ article.intro h1 {
     right: -22px;
 }
 
+/* End of wrapper for carousel */
+
+/* Start of carousel */
+
 .wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 4) - 12px);
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    /* gap: 16px;  ALS JE NIET WILT DAT DE VOLGENDE BOEK ZICHTBAAR IS*/
     border-radius: 8px;
     scroll-behavior: smooth;
 }
@@ -548,31 +507,82 @@ article.intro h1 {
     margin-left: 2.5rem;
 }
 
+/* End of carousel */
+
+/* Start highlights */
+
 .highlight {
     color: lightcoral;
 }
 
-/* tellerstand abonnement */
+/* End of highlights */
 
-    table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 90%;
-        margin-top: 2em;
-        margin-inline: auto;
-      }
-      
-      td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-      }
-      
-      tr:nth-child(even) {
-        background-color: #dddddd;
-      }
+/* Start page: Despositos */
+section.gridParent {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    margin-top: 2.5rem;
+    max-width: 1325px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
 
-/* end tellerstand abonnement */
+article.gridTitle {
+    grid-column: 1 / -1;
+}
+
+article.gridLeft {
+    grid-column: 1 / 1;
+}
+
+article.gridRight {
+    grid-column: 2 / 2;
+}
+
+.gridParent button {
+    height: 100%;
+    width: 50%;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--primary-color-light);
+    color: var(--text-color);
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: grab;
+}
+
+/* End page: Despositos */
+
+/* Start page: Tellerstand abonnement */
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin-top: 2em;
+    margin-inline: auto;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* End page: Tellerstand abonnenment */
+
+/* Responsive */
 
 @media screen and (max-width: 1300px) {
     .wrapper .carousel {
@@ -722,5 +732,3 @@ article.intro h1 {
         margin-left: 1.5rem;
     }
 }
-
-/* end carrousel */
