@@ -410,6 +410,10 @@ article.intro {
     max-width: 1325px;
 }
 
+section article ul {
+    margin-top: 2em;
+}
+
 section.gridParent {
     text-align: left;
     width: 90%;
