@@ -552,6 +552,28 @@ article.intro h1 {
     color: lightcoral;
 }
 
+/* tellerstand abonnement */
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 90%;
+        margin-top: 2em;
+        margin-inline: auto;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+
+/* end tellerstand abonnement */
+
 @media screen and (max-width: 1300px) {
     .wrapper .carousel {
         grid-auto-columns: calc((100% / 3) - 9px);
