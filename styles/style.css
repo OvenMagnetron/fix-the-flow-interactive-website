@@ -242,6 +242,20 @@ select#filters option {
     transition: var(--tran-05);
 }
 
+.gridParent button {
+    height: 100%;
+    width: 50%;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--primary-color-light);
+    color: var(--text-color);
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: grab;
+}
+
 .sidebar li a {
     list-style: none;
     height: 100%;
@@ -396,6 +410,31 @@ article.intro {
     max-width: 1325px;
 }
 
+section.gridParent {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    margin-top: 2.5rem;
+    max-width: 1325px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+article.gridTitle {
+    grid-column: 1 / -1;
+}
+
+article.gridLeft {
+    grid-column: 1 / 1;
+}
+
+article.gridRight {
+    grid-column: 2 / 2;
+}
+
 article.intro p {
     margin-top: 1.5rem;
     width: 50%;
@@ -503,6 +542,10 @@ article.intro h1 {
 .carousel h3,
 .carousel p {
     margin-left: 2.5rem;
+}
+
+.highlight {
+    color: lightcoral;
 }
 
 @media screen and (max-width: 1300px) {
