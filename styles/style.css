@@ -517,6 +517,40 @@ article.intro h1 {
 
 /* End of highlights */
 
+/* Start page: Leeslijst */
+section.leeslijstParent {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    max-width: 1325px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.leeslijstParent article {
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    padding: 15px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.leeslijstParent article img {
+    max-height: 200px;
+}
+
+.leeslijstParent .bx {
+    color: red;
+}
+
+
+/* End page: Leeslijst */
+
 /* Start page: Despositos */
 section.gridParent {
     text-align: left;
