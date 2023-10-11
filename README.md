@@ -1,6 +1,6 @@
 # Mijn oba
 **Inleiding**  
-Dit is onze Squadpage.  
+Familie overzicht mijn Oba.
   
 Image
 
