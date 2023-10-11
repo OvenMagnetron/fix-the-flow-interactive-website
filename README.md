@@ -23,7 +23,7 @@ We hebben de feedback van Mark op onze debrief meegenomen en gebruikt om onze de
 ## 🖇Gebruik
 
 * Open je favoriete webbrowser, zoals Google Chrome, Mozilla Firefox, Safari, etc.
-* Ga naar de website waar onze Squadpage op staat. (Live link is hieronder te vinden)
+* Bekijk onze verbeterde mijn Oba [website](https://ovenmagnetron.github.io/oba/).
 * Wacht tot de website volledig is geladen. Kijk lekker rond!
 
 ## 🔖Kenmerken
