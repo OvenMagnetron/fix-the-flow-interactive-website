@@ -28,6 +28,7 @@
     --sidebar-color: #FFF;
     --primary-color: #FF0000;
     --primary-color-light: #F6F5FF;
+    --primary-color-dark: #d4d4d4;
     --toggle-color: #DDD;
     --text-color: #707070;
 
@@ -589,6 +590,11 @@ article.gridRight {
     font-size: 17px;
     font-weight: 500;
     cursor: grab;
+}
+
+.gridParent button:hover {
+    background-color: var(--primary-color-dark);
+    color: inherit;
 }
 
 /* End page: Despositos */
