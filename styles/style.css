@@ -397,6 +397,10 @@ section article ul {
     margin-top: 2em;
 }
 
+section article ul li {
+    margin-left: 1em;
+}
+
 article.intro p {
     margin-top: 1.5rem;
     width: 50%;
