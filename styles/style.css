@@ -835,6 +835,9 @@ tr:nth-child(even) {
     .home.profileOverview .text img {
         width: inherit;
     }
+    table {
+        font-size: 0.7em;
+    }
 }
 
 @media screen and (max-width: 600px) {
