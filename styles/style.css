@@ -533,6 +533,8 @@ article.intro h1 {
     background-color: #F0F0F0;
     padding-top: 20px;
     background-image: url('../image/background-login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .loginWrapper {
@@ -660,6 +662,7 @@ article.profilePage {
     justify-content: space-evenly;
     text-align: center;
     margin-top: 2.5rem;
+    gap: 2.5em;
 }
 
 .profileButton {
@@ -828,11 +831,23 @@ tr:nth-child(even) {
     .home .text img {
         width: 80%;
     }
+
+    .home.profileOverview .text img {
+        width: inherit;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .home {
         top: 10%
+    }
+
+    .home.profileOverview {
+        top: 0;
+    }
+
+    .home .text.logout {
+        display: inherit;
     }
 
     .sidebar {
