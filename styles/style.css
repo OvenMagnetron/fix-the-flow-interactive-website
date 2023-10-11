@@ -393,11 +393,11 @@ article.intro {
     max-width: 1325px;
 }
 
-section article ul {
+.container article ul {
     margin-top: 2em;
 }
 
-section article ul li {
+.container article ul li {
     margin-left: 1em;
 }
 
