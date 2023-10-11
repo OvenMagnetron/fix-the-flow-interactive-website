@@ -12,51 +12,43 @@
     <!-- Link to boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- Link to JavaScript script -->
-    <script src="./scripts/script.js" defer></script>
 
-    <title>Mijn OBA - Welkom</title>
+    <title>Mijn OBA - login</title>
 </head>
 
 <body>
-    <div class="home profileOverview">
-        <div class="text"><img src="./image/oba_20.png" alt=""></div>
+    <div class="loginContainer">
+        <div class="loginLogo"><img src="./image/oba_20.png" alt=""></div>
+        <div class="loginWrapper">
 
-        <section class="container">
-            <article class="profilePage">
-                <div class="profileTitle">
-                    <h2>Mijn profielen</h2>
-                </div>
-                <div class="profileList">
-                    <a href="./welkom/">
-                        <img src="image/Unknown.jpg" alt="Profielfoto">
-                        <h3>Persoon 1</h3>
-                    </a>
-                    <a href="./welkom/">
-                        <img src="image/Unknown.jpg" alt="Profielfoto">
-                        <h3>Persoon 2</h3>
-                    </a>
-                    <a href="./welkom/">
-                        <img src="image/Unknown.jpg" alt="Profielfoto">
-                        <h3>Persoon 3</h3>
-                    </a>
-                </div>
-                <div class="profileButton">
-                    <button>Profielen beheren</button>
-                </div>
-                <!-- <h2>Mijn Profiel</h2>
-                <div class="profileInformation">
-                    <h2>Jouw profielgegevens</h2>
-                    <p>Naam: Annelinde Raadsheer</p>
-                    <p>Klantnummer: 123456</p>
-                    <p>Email: anne_linde@live.nl</p>
-                    <p>Wachtwoord: ******</p>
-                    <button>Wijzigen</button>
-                </div> -->
-            </article>
-        </section>
+            <div class="heading">
+                <h2>Welkom</h2>
+                <p>Login uw account.</p>
+            </div>
 
+            <div class="input-group">
+                <input type="text" id="username" class="input-field" placeholder="Gebruikersnaam">
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" class="input-field" placeholder="Wachtwoord">
+            </div>
+
+            <div class="input-group row">
+
+                <div class="loginRow">
+                    <a href="#">Wachtwoord vergeten?</a>
+                </div>
+            </div>
+
+
+            <div class="input-group">
+                <a href="./mijn-profielen/"><button class="loginButton">Inloggen</button></a>
+            </div>
+
+        </div>
     </div>
+
 
 </body>
 

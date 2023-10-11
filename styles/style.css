@@ -379,7 +379,7 @@ body.dark .home .text {
     background-color: white;
     margin: 1rem 2.5rem 2.5rem 2.5rem;
     border-radius: 15px;
-    min-height: 95vh;
+    min-height: calc(100vh - 2rem);
 }
 
 /* End container */
@@ -613,6 +613,18 @@ button.loginButton:hover {
 /* End page: Login */
 
 /* Start page: Welkom */
+.home .mirror {
+    position: absolute;
+    left: 0;
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+    padding: 1.5rem;
+}
+
+.logout a i {
+    color: var(--primary-color);
+}
+
 .profileOverview {
     left: unset;
     width: 100%;
