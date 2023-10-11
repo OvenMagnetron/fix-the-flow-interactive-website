@@ -518,6 +518,61 @@ article.intro h1 {
 
 /* End of highlights */
 
+/* Start page: Welkom */
+article.profilePage {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    margin-top: 2.5rem;
+    max-width: 1325px;
+}
+
+.profilePage a:-webkit-any-link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.profileTitle {
+    text-align: center;
+}
+
+.profileList {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.profileButton {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2.5rem;
+}
+
+.profileButton button {
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--primary-color-light);
+    color: inherit;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: grab;
+}
+
+.profileButton button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+
+/* End page: Welkom */
+
 /* Start page: Leeslijst */
 section.leeslijstParent {
     text-align: left;
@@ -594,7 +649,6 @@ article.gridRight {
 
 .gridParent button:hover {
     background-color: var(--primary-color-dark);
-    color: inherit;
 }
 
 /* End page: Despositos */
@@ -619,6 +673,10 @@ th {
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+.betaal-overzicht tr:nth-last-child(1) {
+    border-top: 2px solid red;
 }
 
 /* End page: Tellerstand abonnenment */
