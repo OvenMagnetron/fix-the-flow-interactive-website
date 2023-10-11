@@ -379,7 +379,7 @@ body.dark .home .text {
     background-color: white;
     margin: 1rem 2.5rem 2.5rem 2.5rem;
     border-radius: 15px;
-    min-height: auto;
+    min-height: 95vh;
 }
 
 /* End container */
