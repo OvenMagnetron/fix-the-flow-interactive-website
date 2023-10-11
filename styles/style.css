@@ -523,6 +523,12 @@ article.intro h1 {
 /* End of highlights */
 
 /* Start page: Welkom */
+.profileOverview {
+    left: unset;
+    width: 100%;
+    height: 100vh;
+}
+
 article.profilePage {
     text-align: left;
     width: 90%;
