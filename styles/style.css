@@ -537,6 +537,10 @@ article.profilePage {
     text-decoration: none;
 }
 
+.profilePage img {
+    border-radius: 180px;
+}
+
 .profileTitle {
     text-align: center;
 }
