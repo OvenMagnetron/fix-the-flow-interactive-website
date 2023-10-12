@@ -2,7 +2,8 @@
 **Inleiding**  
 Familie overzicht mijn Oba.
   
-Image
+![image](https://github.com/OvenMagnetron/oba/assets/91184609/62515399-8288-4154-a790-8cdca779d5ca)
+
 
 ## Inhoudsopgave
   * [📝 Beschrijving](#beschrijving)  
@@ -12,6 +13,9 @@ Image
   * [👾 Licentie](#licentie)  
 
 ## 📝Beschrijving
+Als opdracht moesten we een deel van een website bouwen voor een echte opdrachtgever. We konden kiezen uit 5 verschillende opdrachtgevers met allemaal een ander soort opdracht. Nadat we deze uitgekozen hadden, hebben we een briefing gehad en werd er uitgelegd wat er van ons werd verwacht. Hierna hebben wij met z’n drieën een groepje gevormd en besloten om bepaalde onderdelen van deze opdracht samen uit te voeren. We hebben hiervoor gekozen omdat we zo tijdens deze opdracht veel van elkaar kunnen leren, en ons per persoon goed kunnen focussen op onze taak om uiteindelijk beter resultaat te leveren.
+
+>User story: Als oba-lid wil ik een familieoverzicht kunnen zien.
 ### Debriefing
 
 We hebben de feedback van Mark op onze debrief meegenomen en gebruikt om onze debrief te verbeteren.
