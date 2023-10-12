@@ -689,6 +689,45 @@ article.profilePage {
     background-color: var(--primary-color-dark);
 }
 
+.navigationList {
+    width: 90%;
+    margin: auto;
+    margin-top: 2.5rem;
+    max-width: 1325px;
+    display: flex;
+    gap: 50px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navigationList a {
+    border: #18191a 1px solid;
+    border-radius: 15px;
+    height: 10rem;
+    width: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.navigationList a:-webkit-any-link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navigationList a i {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
 
 /* End page: Welkom */
 
@@ -700,11 +739,10 @@ section.leeslijstParent {
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     max-width: 1325px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .leeslijstParent article {
@@ -736,8 +774,7 @@ section.gridParent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    gap: 10px;
 }
 
 article.gridTitle {
@@ -753,8 +790,7 @@ article.gridRight {
 }
 
 .gridParent button {
-    height: 100%;
-    width: 50%;
+    padding: 0.5rem;
     outline: none;
     border: none;
     border-radius: 15px;
@@ -818,6 +854,21 @@ tr:nth-child(even) {
     }
 }
 
+@media screen and (max-width: 850px) {
+    .navigationList a {
+        height: 5rem;
+        width: 10rem;
+    }
+
+    .navigationList a i {
+        font-size: 20px;
+    }
+
+    .navigationList a h3 {
+        font-size: .8rem;
+    }
+}
+
 @media screen and (max-width: 750px) {
     .carousel .card {
         height: 280px;
@@ -835,6 +886,7 @@ tr:nth-child(even) {
     .home.profileOverview .text img {
         width: inherit;
     }
+
     table {
         font-size: 0.7em;
     }
@@ -948,6 +1000,14 @@ tr:nth-child(even) {
     .home .text {
         display: none;
     }
+
+    .leeslijstParent article {
+        max-width: 125px;
+    }
+
+    .leeslijstParent article img {
+        max-height: 75px;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -963,5 +1023,22 @@ tr:nth-child(even) {
     .carousel h3,
     .carousel p {
         margin-left: 1.5rem;
+    }
+
+    .navigationList {
+        gap: .5rem;
+    }
+
+    .navigationList a {
+        height: 4rem;
+        width: 7.5rem;
+    }
+
+    .navigationList a i {
+        font-size: 15px;
+    }
+
+    .navigationList a h3 {
+        font-size: .6rem;
     }
 }
