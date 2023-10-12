@@ -1,6 +1,4 @@
 # Mijn oba
-**Inleiding**
-### Mijn oba omgeving.
 ![image](https://github.com/OvenMagnetron/oba/assets/91184609/e24fd9ad-46df-4b2c-9b27-6f893434e313)
 
 ## User Story
