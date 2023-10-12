@@ -1032,6 +1032,7 @@ tr:nth-child(even) {
     .navigationList a {
         height: 4rem;
         width: 7.5rem;
+        gap: .5rem;
     }
 
     .navigationList a i {
