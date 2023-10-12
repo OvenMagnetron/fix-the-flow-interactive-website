@@ -1,19 +1,17 @@
 # Mijn oba
-**Inleiding**  
-Familie overzicht mijn Oba.
-  
-![image](https://github.com/OvenMagnetron/oba/assets/91184609/62515399-8288-4154-a790-8cdca779d5ca)
+**Inleiding**
+### Mijn oba omgeving.
+![image](https://github.com/OvenMagnetron/oba/assets/91184609/e24fd9ad-46df-4b2c-9b27-6f893434e313)
 
 ## User Story
 
 >Familieoverzicht abonnementen ontwerpen en ontwikkelen. Toon in een overzicht alle abonnementen van een familie met een verwijzing naar een indiviueel profiel van elk familielid.
 
 >Functies:
-
-* Beschikbare diensten
-* Laatst geleende boeken
-* In te leveren boeken om boete te voorkomen
-* Familie overzicht
+> * Beschikbare diensten
+> * Laatst geleende boeken
+> * In te leveren boeken om boete te voorkomen
+> * Familie overzicht
 
 
 ## Inhoudsopgave
