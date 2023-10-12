@@ -44,7 +44,8 @@ We hebben de feedback van Mark op onze debrief meegenomen en gebruikt om onze de
 
 * Gebruikte technieken  
 💻 HTML  
-🎨 CSS  
+🎨 CSS
+💻 JavaScript  
 
 ## 📚Bronnen
 [🌐 docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)  
