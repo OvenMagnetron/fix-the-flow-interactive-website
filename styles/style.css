@@ -246,12 +246,19 @@ select#filters option {
     transition: var(--tran-03);
 }
 
-.sidebar li a:hover {
+.sidebar li a:hover,
+.sidebar li a.active {
+    background-color: var(--primary-color);
+}
+
+.sidebar li a.active {
     background-color: var(--primary-color);
 }
 
 .sidebar li a:hover .icon,
-.sidebar li a:hover .text {
+.sidebar li a:hover .text,
+.sidebar li a.active .icon,
+.sidebar li a.active .text {
     color: var(--sidebar-color);
 }
 
