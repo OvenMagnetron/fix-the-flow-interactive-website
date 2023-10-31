@@ -258,12 +258,14 @@ select#filters option {
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text,
 .sidebar li a.active .icon,
-.sidebar li a.active .text {
+.sidebar li a.active .text,
+.sidebar li a.active .text-long {
     color: var(--sidebar-color);
 }
 
 body.dark .sidebar li a:hover .icon,
-body.dark .sidebar li a:hover .text {
+body.dark .sidebar li a:hover .text,
+body.dark .sidebar li a:hover .text-long {
     color: var(--text-color);
 }
 
